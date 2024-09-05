@@ -36,8 +36,6 @@
     padding: 10px; /* Optional: Add padding for better appearance */
   }
   
-  
-
   /* Table styles */
   .muster-table {
     width: 100%; /* Makes the table take full width of its container */
@@ -111,15 +109,99 @@
   
   /* Sidebar styles */
   .profile-sidebar {
-    background-color: white; /* White background for the sidebar */
-    padding: 20px; /* Space inside the sidebar */
-    color: black; /* Black text color */
-    border-radius: 8px; /* Rounded corners */
+    background-color: white;
+    padding: 20px;
+    color: black;
+    border-radius: 8px;
     position: fixed;
     top: 0;
     right: 0;
     bottom: 0;
-  }
+    width: 300px; /* Fixed width for the sidebar */
+    overflow-y: auto; /* Enable scrolling when content overflows */
+    height: auto;
+}
+
+.profile {
+    text-align: center;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.menu-items {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.menu-items .menu-item {
+    width: 80%; /* Thinner buttons */
+    max-width: 200px; /* Limit maximum width */
+    margin-bottom: 10px;
+    font-weight: bold;
+    text-align: center;
+    padding: 10px;
+}
+
+.action-buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.submit-button, .edit-button, .main-menu-button {
+    width: 150px; /* Consistent width for buttons */
+    text-align: center;
+    padding: 10px 20px;
+    font-weight: bold;
+    color: white;
+}
+
+.profile {
+    text-align: center;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.menu-items {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.menu-items .menu-item {
+    width: 80%; /* Adjust width to make it thinner */
+    max-width: 200px; /* Limit maximum width */
+  
+    font-weight: bold;
+    text-align: center;
+    padding: 3px;
+}
+
+.action-buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.submit-button, .edit-button, .main-menu-button {
+    width: 150px; /* Consistent width for buttons */
+    text-align: center;
+    padding: 10px 20px;
+    font-weight: bold;
+    color: white;
+}
+
   
  /* Centered profile section within the sidebar */
 .profile {

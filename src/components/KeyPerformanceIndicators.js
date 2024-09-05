@@ -1,5 +1,5 @@
 import React from 'react';
-import { Container, Button, Table } from 'react-bootstrap';
+import { Container, Button, Table, Row, Col } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 import './KeyPerformanceIndicators.css';
 
@@ -80,7 +80,9 @@ const KeyPerformanceIndicators = () => {
              
             </tbody>
           </Table>
+          
         </Container>
+  
       </div>
 
       {/* Sidebar */}
@@ -114,6 +116,16 @@ const KeyPerformanceIndicators = () => {
             <Button variant="danger" className="main-menu-button">Main Menu</Button>
           </Link>
         </div>
+      </div>
+
+
+      {/* Footer inside main layout */}
+      <div className="footer-container">
+        <Row>
+          <Col className="footer-key-performance">
+            <p>Powered by <strong>Plantec Ceylon (Pvt) Ltd.</strong></p>
+          </Col>
+        </Row>
       </div>
     </div>
   );

@@ -20,7 +20,21 @@ const Header = () => {
       <button className="messages-btn">
         Messages <span className="badge">2</span>
       </button>
-      <button className="main-menu-btn">Main Menu</button> {/* Add a button for Main Menu */}
+      <button className="messages-btn">
+        Cash Book 
+      </button>
+      <button className="messages-btn">
+        Pending Payments 
+      </button>
+      <button className="messages-btn">
+        Payments Approval <span className="badge">9</span>
+      </button>
+      <button className="messages-btn">
+        Leave Applications
+      </button>
+      <button className="messages-btn">
+        Correspondence 
+      </button>
       <button className="logout-btn">Log Out</button>
     </div>
   );

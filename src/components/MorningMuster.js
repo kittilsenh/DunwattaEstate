@@ -15,10 +15,24 @@ const MorningMuster = () => {
             <h2 className="estate-title">Dunwatta Estate</h2>
           <h4 className="division-title">GC Division</h4>
           <h2>Morning Muster</h2>
+
           <Link to="/morning-muster-revive">
             <Button variant="success" className="muster-button">Review Muster</Button>
           </Link>
 
+      {/* Date and Time Section - moved into a separate Row with smaller col */}
+      <Row>
+        <Col md={{ span: 3, offset: 9 }} className="date-time-section">
+          <div className="date-time-wrapper">
+            <span className="date-label">Date:</span>
+            <span>02/03/2024</span>
+            <span className="time-label">Time:</span>
+            <span>7:55 AM</span>
+          </div>
+        </Col>
+      </Row>
+
+      {/* Floating Div */}
         <div className="floating-div">
             <Image src={maleImage} roundedCircle className="worker-image"/>
             <div className="red-dot">X</div>
@@ -103,24 +117,24 @@ const MorningMuster = () => {
           </Row>
         </Col>
 
-        <Col xs={12} md={3} className="profile-sidebar">
-          <div className="profile">
-            <img src={userIcon} alt="Profile" className="profile-image" />
-            <div className="name-background">
-            <div className="name-background w-100 text-center">
+        <Col xs={12} md={3} className="morningmuster-profile-sidebar">
+          <div className="morningmuster-profile">
+            <img src={userIcon} alt="Profile" className="morningmuster-profile-image" />
+            <div className="morningmuster-name-background">
+            <div className="morningmuster-name-background w-100 text-center">
                 <h4 className="text-white">Mr. S. Sahan</h4>
                 <p className="text-white">Field Officer</p>
               </div>
             </div>
           </div>
-          <div className="menu-items">
+          <div className="morningmuster-menu-items">
             <Button variant="outline-success" className="menu-item">Messages</Button>
             <Button variant="outline-success" className="menu-item">Order Request / Return</Button>
             <Button variant="outline-success" className="menu-item">Plucking Rounds</Button>
             <Button variant="outline-success" className="menu-item">Work Program</Button>
             <Button variant="outline-success" className="menu-item">Correspondence</Button>
             <Link to="/">
-            <Button variant="danger" className="menu-item">Main Menu</Button>
+            <Button variant="danger" className="morningmuster-menu-danger">Main Menu</Button>
             </Link>
           </div>
         </Col>

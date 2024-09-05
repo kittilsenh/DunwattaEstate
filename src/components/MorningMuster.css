@@ -143,7 +143,7 @@
   
   .floating-div {
     position: absolute;
-    top: 71%; /* Adjust this value to position vertically */
+    top: 84%; /* Adjust this value to position vertically */
     left: 35%; /* Adjust this value to position horizontally */
     transform: translate(-50%, -50%); /* Center the div at the specified coordinates */
     background-color: #6d9773; /* Semi-transparent white background */
@@ -181,3 +181,119 @@
     line-height: 20px;
     font-weight: bold;
   }
+
+  /* ------------- Sidebar Styles ---------------*/
+
+  .morningmuster-profile-sidebar {
+    background-color: white;
+    
+    color: black;
+    border-radius: 8px;
+    height: 100vh; /* Full height */
+    position: sticky; /* Keeps the sidebar fixed while scrolling */
+    top: 0;
+    right: 0;
+    overflow-y: auto; /* Allows scrolling if content exceeds height */
+}
+
+.morningmuster-profile {
+    text-align: center;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.morningmuster-profile-image {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+    background-color: #f5f5f5; /* Placeholder background in case of no image */
+    object-fit: cover; /* Ensures the image covers the entire space */
+}
+
+.morningmuster-name-background {
+    background-color: #006400; /* Green background */
+    width: 100%;
+    padding: 10px;
+    border-radius: 8px;
+    color: white;
+    text-align: center;
+}
+
+.morningmuster-menu-items {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.morningmuster-menu-items .menu-item {
+    width: 100%;
+    max-width: 200px; /* Controls the maximum width of the buttons */
+    padding: 10px;
+    font-weight: bold;
+    text-align: center;
+    border-radius: 5px;
+}
+
+.menu-item.outline-success {
+    border: 2px solid #6d9773;
+    color: #6d9773;
+    background-color: transparent;
+}
+
+.menu-item.outline-success:hover {
+    background-color: #6d9773;
+    color: white;
+}
+
+.morningmuster-menu-danger {
+    border-radius: 200px;
+    width: 110%;
+    margin-top: 80px;
+    background-color: red;
+    color: white;
+    border: none;
+}
+
+.menu-item.danger:hover {
+    background-color: darkred;
+}
+
+/* Date and Time Section */
+.date-time-section {
+  display: flex;
+  justify-content: flex-end; /* Align to the right */
+  margin-bottom: 20px;
+}
+
+.date-time-wrapper {
+  display: flex;
+  align-items: center; /* Vertically align the date and time */
+  gap: 5px; /* Space between date and time */
+  background-color: #f5f5f5;
+  padding: 5px 15px;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+.date-time-wrapper span {
+  margin-right: 20px;
+}
+
+.date-time-wrapper .date-label, 
+.date-time-wrapper .time-label {
+  font-weight: bold;
+  margin-right: 5px;
+}
+
+/* Optional: Styling for individual date/time elements */
+.date-time-wrapper span:nth-child(2), 
+.date-time-wrapper span:nth-child(4) {
+  background-color: white;
+  padding: 5px;
+  border-radius: 5px;
+  font-weight: normal;
+}

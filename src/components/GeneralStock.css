@@ -135,10 +135,21 @@
     margin: 0;
 }
 
+.menu-item-stock {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%; /* Ensure the container takes up the full width */
+}
+
 .menu-items-stock .menu-item-stock {
-    width: 100%;
-    margin-bottom: 10px;
+    width: 70%; /* Control the width of each button (thinner buttons) */
+    max-width: 250px; /* Limit maximum width for thinner appearance */
+    margin: 4px auto; /* Add space between buttons */
     font-weight: bold;
+    text-align: center; /* Ensure the text inside is centered */
+    margin-left: 50px;
 }
 
 .action-buttons-stock {
@@ -264,16 +275,4 @@ input[type="text"].responsive-input {
 
 #light-green-stock-general {
     background-color: rgb(138, 197, 138);
-}
-
-/* Apply hover effect on table cells */
-.stock-table td:hover {
-    background-color: lightgreen;
-    cursor: pointer;
-}
-
-/* Apply hover effect on the inner table cells */
-.inner-table td:hover {
-    background-color: white;
-    cursor: pointer;
 }

@@ -3,43 +3,41 @@
     grid-template-columns: 10fr 2fr; /* Main content takes remaining space, sidebar takes 300px */
     gap: 20px; /* Add some space between the main content and the sidebar */
     min-height: 100vh;
-  
+    position: relative;
   }
   
   .page-title {
     text-align: left;
   }
 
-
-
   .kpi-main-content {
     background-color: #f9f9f9;
     border-radius: 8px;
-    width: 100%; /* Ensure the main content fills the grid space */
+    padding: 20px; /* Add some padding */
+    margin-right: 20px; /* Space between the main content and sidebar */
+}
+  
+.kpi-profile-sidebar {
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  height: 110vh; /* Full height for sidebar */
+  position: sticky;
+  top: 0;
+  overflow-y: auto;
+}
+  
+  
 
-  }
-  
-  .kpi-profile-sidebar {
-    background-color: white;
-    padding: 20px;
-    border-radius: 8px;
-    height: 100vh; /* Make sure it spans the full height */
-    position: sticky;
-    top: 0;
-    right: 0;
-    overflow-y: auto;
-    width: 100%;
-  }
-  
-  
-  .kpi-footer {
-    text-align: center;
-    margin-top: 20px;
-    font-size: 0.9em;
-    color: #777;
-  }
 .kpi-table {
+    width: 100%;
     border-collapse: collapse; /* Collapse the table borders */
+}
+
+.kpi-table th, .kpi-table td {
+    border: 1px solid #000; /* Add a border around each cell */
+    padding: 10px; /* Add some padding */
+    text-align: left;
 }
 
   .kpi-table thead th {
@@ -64,8 +62,6 @@
     position: relative; /* Make the button the reference point for the absolute positioning */
     padding: 10px 20px;
     border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s;
   }
   
   .kpi-notification-badge {
@@ -83,3 +79,22 @@
     right: -10px;
   }
   
+  .footer-key-performance {
+    text-align: center;
+    color: #555;
+    font-size: 1.0em;
+    width: 100%;
+  }
+  .footer-container {
+    grid-column: 1 / -1; /* Span the footer across the entire grid */
+    padding: 10px;
+    background-color: #f1f1f1;
+    text-align: center;
+  }
+  
+  .kpi-footer {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 0.9em;
+    color: #777;
+  }

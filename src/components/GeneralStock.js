@@ -7,9 +7,12 @@ import '@fortawesome/fontawesome-free/css/all.min.css'; // Import Font Awesome
 const GeneralStock = () => {
   return (
     <Container fluid className="general-stock-container">
+      
       <Row>
             <h2 className="estate-title">Dunwatta Estate</h2>
             <h4 className="division-title">GC Division</h4>
+            <h1>General Stock</h1>
+
         {/* Insert table here */}
         <Col xs={9}>
           <Table bordered hover className="stock-table">

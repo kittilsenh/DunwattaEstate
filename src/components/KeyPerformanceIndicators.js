@@ -15,6 +15,15 @@ const KeyPerformanceIndicators = () => {
 
           {/* Table */}
           <Table bordered className="kpi-table">
+          <colgroup>
+            <col style={{ width: '10%' }} />
+            <col style={{ width: '10%' }} />
+            <col style={{ width: '5%' }} />
+            <col style={{ width: '5%' }} />
+            <col style={{ width: '5%' }} />
+            <col style={{ width: '10%' }} />
+            <col style={{ width: '10%' }} />
+          </colgroup>
             <thead>
               <tr>
                 <th colSpan="2">Muster Chit</th>
@@ -30,6 +39,7 @@ const KeyPerformanceIndicators = () => {
                 <td colSpan="1"></td>
                 <td colSpan="1"></td>
                 <td colSpan="1"></td>
+                <td colspan="1"></td>
               </tr>
               <tr>
                 <td colSpan="1">SS</td>
@@ -38,6 +48,7 @@ const KeyPerformanceIndicators = () => {
                 <td colSpan="1"></td>
                 <td colSpan="1"></td>
                 <td colSpan="1"></td>
+                <td colspan="1"></td>
               </tr>
               <tr>
                 <td colSpan="1">MK</td>
@@ -46,6 +57,7 @@ const KeyPerformanceIndicators = () => {
                 <td colSpan="1"></td>
                 <td colSpan="1"></td>
                 <td colSpan="1"></td>
+                <td colspan="1"></td>
               </tr>
               <tr>
                 <td colSpan="1">FD</td>
@@ -54,6 +66,7 @@ const KeyPerformanceIndicators = () => {
                 <td colSpan="1"></td>
                 <td colSpan="1"></td>
                 <td colSpan="1"></td>
+                <td colspan="1"></td>
               </tr>
               <tr>
                 <td colSpan="1">Estate</td>
@@ -62,7 +75,9 @@ const KeyPerformanceIndicators = () => {
                 <td colSpan="1"></td>
                 <td colSpan="1"></td>
                 <td colSpan="1"></td>
+                <td colspan="1"></td>
               </tr>
+             
             </tbody>
           </Table>
         </Container>
@@ -90,10 +105,11 @@ const KeyPerformanceIndicators = () => {
           <Button variant="outline-success" className="kpi-menu-item mb-2">Work Program</Button>
           
           <Button variant="outline-success" className="kpi-menu-item mb-2">Tapping Rounds</Button>
+
         </div>
         <div className="action-buttons">
-          <Button variant="success" className="submit-button">Submit</Button>
-          <Button variant="warning" className="edit-button">Edit</Button>
+          <Button variant="success" className="submit-button">Approved</Button>
+          <Button variant="warning" className="edit-button">Return</Button>
           <Link to="/">
             <Button variant="danger" className="main-menu-button">Main Menu</Button>
           </Link>

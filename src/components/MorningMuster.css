@@ -143,8 +143,8 @@
   
   .floating-div {
     position: absolute;
-    top: 84%; /* Adjust this value to position vertically */
-    left: 35%; /* Adjust this value to position horizontally */
+    top: 72.5%; /* Adjust this value to position vertically */
+    left: 36%; /* Adjust this value to position horizontally */
     transform: translate(-50%, -50%); /* Center the div at the specified coordinates */
     background-color: #6d9773; /* Semi-transparent white background */
     padding: 20px;

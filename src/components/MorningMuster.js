@@ -16,13 +16,14 @@ const MorningMuster = () => {
           <h4 className="division-title">GC Division</h4>
           <h2>Morning Muster</h2>
 
+      {/* Row to align Review Muster button and Date/Time */}
+      <Row className="align-items-center">
+        <Col xs={6}>
           <Link to="/morning-muster-revive">
             <Button variant="success" className="muster-button">Review Muster</Button>
           </Link>
-
-      {/* Date and Time Section - moved into a separate Row with smaller col */}
-      <Row>
-        <Col md={{ span: 3, offset: 9 }} className="date-time-section">
+        </Col>
+        <Col xs={6} className="date-time-section">
           <div className="date-time-wrapper">
             <span className="date-label">Date:</span>
             <span>02/03/2024</span>

@@ -1,0 +1,279 @@
+.general-stock-container {
+    padding: 20px;
+    background-color: #f5f5f5;
+}
+
+.page-title-stock {
+    font-size: 2rem;
+    font-weight: bold;
+    color: black;
+    margin-bottom: 20px;
+}
+
+.stock-actions {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.stock-button {
+    background-color: #6d9773;
+    border: none;
+    padding: 10px 20px;
+    font-weight: bold;
+    color: white;
+}
+
+.stock-chit-header {
+    background-color: lightgreen;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    padding: 10px;
+}
+
+.stock-table {
+    width: 100%;
+    background-color: #e9ecef;
+    text-align: left;
+}
+
+.stock-table th {
+    background-color: #d1d7c5;
+    color: #2f4f2f;
+}
+
+.chemical-header-stock {
+    width: 100%;
+    background-color: #e9ecef;
+    text-align: center;
+    background-color: #d1d7c5;
+    color: #2f4f2f;
+}
+
+.cell-text-stock {
+    text-align: left;
+}
+
+.item-section, .chemical-section-stock {
+    display: flex;
+    flex-direction: column;
+}
+
+.item-stock {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.worker-icon-stock {
+    background: url('../assets/male.png') no-repeat center center;
+    background-size: cover;
+    width: 80px;
+    height: 70px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.feworker-icon-stock {
+    background: url('../assets/female.png') no-repeat center center;
+    background-size: cover;
+    width: 80px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.am-input-stock, .pm-input-stock {
+    width: 50px;
+    margin: 0 5px;
+}
+
+.edit-button-stock, .delete-button-stock, .success-button-stock {
+    margin-left: 5px;
+    padding: 10px;
+}
+
+.profile-sidebar-stock {
+    background-color: white;
+    padding: 20px;
+    color: black;
+    border-radius: 8px;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.profile-stock {
+    text-align: center;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.profile-image-stock {
+    background: url('../assets/profile.png') no-repeat center center;
+    background-size: cover;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+.name-background-stock {
+    background-color: darkgreen;
+    padding: 10px;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.name-background-stock h4, 
+.name-background-stock p {
+    color: white;
+    margin: 0;
+}
+
+.menu-items-stock .menu-item-stock {
+    width: 100%;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.action-buttons-stock {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.submit-button-stock {
+    background-color: green;
+    color: white;
+}
+
+.edit-button-stock {
+    background-color: #f0ad4e;
+    color: white;
+}
+
+.main-menu-button-stock {
+    background-color: red;
+    color: white;
+}
+
+.submit-button-stock, .main-menu-button-stock {
+    padding: 10px 20px;
+    font-weight: bold;
+    color: white;
+    width: 150px;
+}
+
+.footer-stock {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 0.9em;
+    color: #777;
+}
+
+.floating-box-stock {
+    background-color: lightgreen;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    align-self: right;
+    margin-left: 80%;
+    width: 120px;
+    max-width: 130px;
+    top: 5px;
+    right: 5px;
+    z-index: 1000;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.stock-circle-icon {
+    width: 40px;
+    height: 40px;
+    background-color: rgb(122, 213, 122);
+    color: black;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    font-size: 16px;
+    margin-left: 10px;
+}
+
+#stock-left {
+    text-align: left;
+}
+
+.stock-right-icon {
+    float: right;
+    margin-right: 10px;
+    font-size: 20px;
+    color: #000;
+}
+
+.stock-right-text {
+    float: right;
+    font-weight: normal;
+    margin-right: 20px;
+}
+
+input[type="text"] {
+    width: 80px;
+    padding: 5px;
+    font-size: 14px;
+    border: 1px solid rgb(255, 255, 255);
+    border-radius: 4px;
+}
+
+input[type="text"].small-input {
+    width: 50px;
+    border-radius: 12px;
+}
+
+input[type="text"].responsive-input {
+    width: 30%;
+}
+
+.floating-green-div-stock {
+    position: absolute;
+    top: 350px;
+    right: 410px;
+    background-color: rgb(138, 197, 138);
+    color: black;
+    padding: 35px;
+    border-radius: 8px;
+    z-index: 1000;
+    font-size: 16px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.return-button-stock, .main-menu-button-stock, .submit-button-stock {
+    width: 180px;
+}
+
+.action-buttons-stock {
+    margin-top: 50px;
+}
+
+#light-green-stock-general {
+    background-color: rgb(138, 197, 138);
+}
+
+/* Apply hover effect on table cells */
+.stock-table td:hover {
+    background-color: lightgreen;
+    cursor: pointer;
+}
+
+/* Apply hover effect on the inner table cells */
+.inner-table td:hover {
+    background-color: white;
+    cursor: pointer;
+}

@@ -1,0 +1,65 @@
+.sidebar {
+  background-color: #006400;
+  padding: 20px;
+  color: white;
+  height: 100vh;
+  width: 250px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 999;
+  overflow-y: auto;
+}
+  
+  .sidebar .user-info {
+    margin-bottom: 30px; /* Extra space below user info */
+    border-bottom: 1px solid #3c763d; /* Divider line below user info */
+    padding-bottom: 10px;
+  }
+  
+  .sidebar .user-info h2 {
+    margin: 0;
+    font-size: 1.5em;
+    font-weight: bold;
+  }
+  
+  .sidebar .user-info p {
+    margin: 0;
+    font-size: 1em;
+    font-weight: normal;
+  }
+  
+  .sidebar .menu {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .sidebar .menu li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    display: block;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #62aa62; /* Dark green for the menu items */  
+    transition: background-color 0.55s;
+    transition: color 0.85s;
+    margin-top: 7.5px; /* Space between menu items */
+  }
+  
+/* Apply hover effect to the anchor element */
+.sidebar .menu li a:hover {
+  background-color: #bce3bc; /* Change background color on hover */
+  color: #003300;
+}
+
+.sidebar .menu li a.active {
+  background-color: #87bc87; /* Lighter green for the active item */
+  color: #003300; /* Darker text color for contrast */
+  border-radius: 5px;
+}
+
+.sidebar .menu li:last-child a {
+  margin-bottom: 0; /* Remove margin on the last item */
+}
+  

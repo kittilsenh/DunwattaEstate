@@ -1,0 +1,87 @@
+.kpi-layout {
+    display: grid;
+    grid-template-columns: 10fr 2fr; /* Main content takes remaining space, sidebar takes 300px */
+    gap: 20px; /* Add some space between the main content and the sidebar */
+    min-height: 100vh;
+  
+  }
+  
+  .page-title {
+    text-align: left;
+  }
+
+
+
+  .kpi-main-content {
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    width: 100%; /* Ensure the main content fills the grid space */
+
+  }
+  
+  .kpi-profile-sidebar {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    height: 100vh; /* Make sure it spans the full height */
+    position: sticky;
+    top: 0;
+    right: 0;
+    overflow-y: auto;
+    width: 100%;
+  }
+  
+  
+  .kpi-footer {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 0.9em;
+    color: #777;
+  }
+.kpi-table {
+    border-collapse: collapse; /* Collapse the table borders */
+}
+
+  .kpi-table thead th {
+    background-color: #d9ead3; /* Light green background */
+    text-align: center;
+    font-weight: bold;
+    border: 1px solid #000; /* Add a border around the header */
+  }
+  .kpi-table td, .kpi-table th {
+    border: 1px solid #000; /* Apply border to all sides */
+    padding: 10px;
+   
+  }
+
+  .kpi-table td {
+    text-align: left;
+    border-bottom: 1px solid #000 !important; /* Ensure bottom border is applied */
+    border-top: 1px solid #000; /* Ensure top border is applied */
+  }
+
+  .kpi-menu-item {
+    position: relative; /* Make the button the reference point for the absolute positioning */
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+
+    
+  }
+  
+  .kpi-notification-badge {
+    background-color: red;
+    color: white;
+    font-size: 12px;
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    display: inline-block;
+    text-align: center;
+    line-height: 18px;
+    position: absolute;
+    top: -5px;
+    right: -10px;
+  }
+  

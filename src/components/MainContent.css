@@ -1,0 +1,85 @@
+/* src/components/MainContent.css */
+.main-content {
+    padding: 20px;
+    background-color: #f5f5f5;
+    text-align: center;
+    color: darkgreen;
+    font-size: 1em;
+  }
+  
+  .date-time-container {
+    background-color: #E0E4DB;
+    padding: 10px;
+    border-radius: 8px;
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  
+  .date, .time {
+    background-color: #D1D7C5;
+    padding: 8px 12px;
+    border-radius: 8px;
+    font-weight: bold;
+    font-size: 1em;
+    color: #2F4F2F;
+    text-align: center;
+  }
+
+  .table {
+    width: 100%;
+    margin-bottom: 20px;
+    border-collapse: collapse;
+  }
+  
+  .table th, .table td {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: center;
+  }
+  
+  .buttons {
+    display: flex;
+    justify-content: flex-start; /* Align buttons to the left */
+    margin-top: 20px;
+  }
+  
+  .buttons .rounds-btn {
+    background-color: #D1D7C5;
+    border: none;
+    padding: 10px;
+    border-radius: 10px;
+    font-size: 1.05em;
+    color: #2F4F2F;
+    cursor: pointer;
+  }
+  
+  #rowMerged {
+    border: none;
+    background-color: #f5f5f5;
+  }
+  
+  .rounds-btn {
+    background-color: #6d9773; /* Match button color */
+    border: none;
+    padding: 10px 20px;
+    border-radius: 8px; /* Rounded corners */
+    color: white;
+    font-size: 1.1em;
+    font-weight: bold;
+    text-align: center;
+    white-space: nowrap; /* Prevent text from wrapping */
+    margin-right: 15px; /* Add space between the buttons */
+  }
+  
+  .rounds-btn:last-child {
+    margin-right: 0; /* Ensure the last button has no extra margin */
+  }
+  
+  .rounds-btn:hover {
+    background-color: #5c8461; /* Darker green on hover */
+    color: white;
+  }
+  
+  .rounds-btn:focus {
+    box-shadow: none; /* Remove outline on focus */
+  }

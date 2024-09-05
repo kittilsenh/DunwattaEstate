@@ -1,0 +1,119 @@
+/* Container for the entire muster review page, providing background color and padding */
+.muster-revive-container {
+  background-color: #f8f9fa;
+  padding: 20px;
+  min-height: 100vh; /* Ensure the container covers the full viewport height */
+}
+
+
+
+/* Styling for the Muster and Clear All buttons */
+.muster-button {
+  margin-right: 10px; /* Add space between the buttons */
+}
+
+/* Styling for the Muster Chit table */
+.muster-chit-table {
+  width: 100%;
+  background-color: #e0e0e0; /* Light grey background for the table */
+  border-collapse: collapse;
+  border: 2px solid black; /* Thick black border around the entire table */
+}
+
+/* Styling for table header and data cells in the Muster Chit table */
+.muster-chit-table th,
+.muster-chit-table td {
+  padding: 8px; /* Padding inside each cell */
+  border: 1px solid #000; /* Black border around each cell */
+  text-align: left;
+  vertical-align: middle;
+}
+.muster-chit-table th {
+  background-color: #d0d0d0; /* Slightly darker grey for table header */
+  font-weight: bold; /* Make the header text bold */
+}
+
+.muster-chit-table td {
+  font-weight: normal;
+}
+
+
+/* Styling for rows that show totals in the table */
+.total-row {
+  background-color: #d0d0d0; /* Slightly darker grey for total rows */
+  font-weight: bold; /* Make the text bold */
+}
+
+/* General styling for sections on the right side (Pluckers, Chemical Weeding, etc.) */
+.section {
+ /* Space below each section */
+  border: 1px solid #000; /* Black border around the section */
+  background-color: #e0e0e0; /* Light grey background */
+  padding: 10px; /* Padding inside the section */
+}
+
+/* Styling for the header within each section (e.g., Pluckers, Chemical Weeding) */
+.section-header {
+  display: flex;
+  justify-content: space-between; /* Space out the header title and Clear button */
+  align-items: center; /* Vertically center the items */
+  background-color: rgb(112, 197, 112); /* Slightly darker grey for the header background */
+  padding: 5px 10px; /* Padding inside the header */
+  border-bottom: 1px solid #000; /* Border below the header */
+  font-weight: bold; /* Make the header text bold */
+}
+
+/* Container for grouping workers by field within a section */
+.worker-group {
+  margin-top: 10px; /* Space above each worker group */
+  padding: 10px; /* Padding inside the group */
+  background-color: #f0f0f0; /* Even lighter grey background for worker groups */
+  border-bottom: 1px solid #ccc; /* Subtle border below each group */
+}
+
+/* Styling for the title of each worker group (e.g., Field No 2A - (15)) */
+.field-title {
+  font-weight: bold; /* Make the text bold */
+  margin-bottom: 5px; /* Space below the title */
+}
+
+/* Container for worker icons, arranging them in a flexible grid */
+.workers {
+  display: flex;
+  flex-wrap: wrap; /* Allow worker images to wrap to the next line */
+  gap: 5px; /* Space between worker images */
+}
+
+/* Styling for each worker image */
+.worker-image {
+  width: 20px; /* Fixed width for images */
+  height: 20px; /* Fixed height for images */
+}
+
+/* Styling for the Clear buttons within each section */
+.clear-button {
+  background-color: red; /* Red background */
+  color: white; /* White text */
+  border-radius: 5px; /* Rounded corners */
+}
+
+/* Background styling for the name section in the profile sidebar */
+.name-background {
+  background-color: #006400; /* Dark green background */
+  padding: 10px; /* Padding inside the background */
+  margin-top: 20px; /* Space above the name section */
+  margin-bottom: 20px; /* Space below the name section */;
+}
+
+/* Styling for the buttons in the profile sidebar */
+.menu-item {
+  width: 100%; /* Full width for the buttons */
+  margin-bottom: 10px; /* Space below each button */
+}
+
+/* Styling for the profile image in the sidebar */
+.profile-image {
+  width: 80px; /* Fixed width */
+  height: 80px; /* Fixed height */
+  margin-bottom: 40px; /* Space below the image */
+}

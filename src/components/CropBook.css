@@ -1,0 +1,166 @@
+/* Prefix all classes with `crop-book-` to scope them to the Crop Book component */
+.crop-book-layout {
+    display: grid;
+    grid-template-columns: 5fr 1fr;
+    gap: 20px;
+    min-height: 200vh;
+    font-size: 1.05rem; /* Reduce overall font size */
+
+}
+
+.crop-book-main-content {
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    width: 100%;
+    padding: 20px;
+}
+
+.crop-book-profile-sidebar {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    height: 100vh;
+    position: sticky;
+    top: 0;
+    overflow-y: auto;
+}
+
+.crop-book-menu-item {
+    position: relative; /* Make the button the reference point for the absolute positioning */
+}
+
+.crop-book-notification-badge {
+    background-color: red;
+    color: white;
+    font-size: 12px;
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    display: inline-block;
+    text-align: center;
+    line-height: 18px;
+    position: absolute;
+    top: -10px; /* Position above the button */
+    right: -10px; /* Position to the right of the button */
+}
+
+#book-row-2, #book-row-4, #book-row-6, #book-row-8, #book-row-10, #book-row-12, #book-row-14 {
+    text-align: right;
+    border-bottom: 1px solid #000 !important; /* Ensure bottom border is applied */
+}
+
+.crop-book-main-content .table-bordered th {
+    border: 1px solid #000; /* Border around each cell */
+}
+
+.crop-book-main-content .table-bordered td {
+    border-left: 1px solid #000; /* Left border for each cell */
+    border-right: 1px solid #000; /* Right border for each cell */
+}
+
+/* Header styling */
+.crop-book-main-content thead th {
+    background-color: #d9ead3; /* Light green background */
+    text-align: center; /* Center text alignment */
+    font-weight: bold; /* Bold text */
+}
+
+/* Align cells to the left for row 1, 3, 5, ... */
+.crop-book-cell {
+    padding: 10px;
+    width: 600px;
+}
+
+/* Image styling (in case further customization is needed) */
+.crop-book-main-content img {
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+    height: auto;
+}
+
+/* Remove bottom border for specific rows */
+#book-row-1, #book-row-3, #book-row-5, #book-row-7, #book-row-9, #book-row-11, #book-row-13 {
+    text-align: left;
+    border-bottom: 0 !important; /* Remove bottom border */
+    border-top: 1px solid #000; /* Ensure top border is applied */
+}
+
+#bookDayGreen {
+    background-color: darkgreen;
+}
+
+#bookTodateGreen {
+    background-color: #d9ead3;
+}
+
+.crop-book-main-menu-button {
+    position: relative;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.content-wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.crop-book-main-content img {
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+    height: 650px;
+}
+
+.image-cell {
+    vertical-align: top; /* Align image to the top */
+}
+
+/* Ensure the new table has its own unique class 
+.new-table-container {
+
+   
+  }
+  */
+  .custom-crop-book-table {
+    width: 100%; /* Control width */
+    table-layout: fixed; /* Force table to be thinner */
+    font-size: 0.58rem; /* Adjust font size to make the table thinner */
+    line-height: 0.58; /* Reduce the line-height to make the table more compact */
+  }
+
+/* Define equal width for all columns */
+.custom-crop-book-table th:first-child,
+.custom-crop-book-table td:first-child {
+    width: 4%; /* Set a fixed width for the leftmost column */
+}
+  
+  .custom-crop-book-table th,
+  .custom-crop-book-table td {
+    padding: 4px;
+    text-align: left;
+  }
+  
+  /* Specific column widths to control the table's overall width */
+  .custom-crop-book-table th {
+    background-color: #ffffff !important;
+    width: 10%; /* Adjust to make the columns narrower */
+    height: 2%;
+  }
+  
+  .custom-crop-book-table td {
+    width: 10%; /* Match the column width */
+    height: 2%;
+  }
+  
+  #new-crop-table {
+    border-collapse: collapse;
+  }
+  
+  /* Styling the border */
+  .custom-crop-book-table th, .custom-crop-book-table td {
+    border: 1px solid #dddddd;
+  }

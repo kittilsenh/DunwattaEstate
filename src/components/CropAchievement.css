@@ -1,0 +1,186 @@
+/* Prefix all classes with `crop-achievement-` to scope them to the Crop Achievement component */
+.crop-achievement-layout {
+  display: grid;
+  grid-template-columns: 5fr 1fr;
+  gap: 20px;
+  min-height: 200vh;
+  font-size: 0.8rem; /* Reduce overall font size */
+}
+
+.crop-achievement-main-content {
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  width: 100%;
+  padding: 20px;
+}
+
+.crop-achievement-profile-sidebar {
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  height: 100vh;
+  position: sticky;
+  top: 0;
+  overflow-y: auto;
+}
+
+.crop-achievement-menu-item {
+  position: relative; /* Make the button the reference point for the absolute positioning */
+}
+
+/* Sidebar Text and Green Background Styling */
+.crop-achievement-profile-sidebar .name-background-achievement {
+  background-color: darkgreen;
+  padding: 10px;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+.crop-achievement-profile-sidebar h4,
+.crop-achievement-profile-sidebar p {
+    color: white;
+    margin: 0;
+}
+
+/* Sidebar Buttons */
+.crop-achievement-menu-item {
+    position: relative; /* Make the button the reference point for the absolute positioning */
+    font-weight: bold;
+    padding: 10px;
+}
+
+.crop-achievement-notification-badge {
+  background-color: red;
+  color: white;
+  font-size: 12px;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  display: inline-block;
+  text-align: center;
+  line-height: 18px;
+  position: absolute;
+  top: -10px; /* Position above the button */
+  right: -10px; /* Position to the right of the button */
+}
+
+#achievement-row-2, #achievement-row-4, #achievement-row-6, #achievement-row-8, #achievement-row-10, #achievement-row-12, #achievement-row-14 {
+  text-align: right;
+  border-bottom: 1px solid #000 !important; /* Ensure bottom border is applied */
+}
+
+.crop-achievement-main-content .table-bordered th {
+  border: 1px solid #000; /* Border around each cell */
+}
+
+.crop-achievement-main-content .table-bordered td {
+  border-left: 1px solid #000; /* Left border for each cell */
+  border-right: 1px solid #000; /* Right border for each cell */
+}
+
+/* Header styling */
+.crop-achievement-main-content thead th {
+  background-color: #d9ead3; /* Light green background */
+  text-align: center; /* Center text alignment */
+  font-weight: bold; /* Bold text */
+}
+
+/* Align cells to the left for row 1, 3, 5, ... */
+.crop-achievement-cell {
+ 
+  width: 600px;
+}
+
+.crop-achievement-main-content img {
+  display: block;
+  margin: 0 auto;
+  max-width: 100%;
+  height: auto;
+}
+
+/* Remove bottom border for specific rows */
+#achievement-row-1, #achievement-row-3, #achievement-row-5, #achievement-row-7, #achievement-row-9, #achievement-row-11, #achievement-row-13 {
+  text-align: left;
+  border-bottom: 0 !important; /* Remove bottom border */
+  border-top: 1px solid #000; /* Ensure top border is applied */
+}
+
+#achievementDayGreen {
+  background-color: darkgreen;
+}
+
+#achievementTodateGreen {
+  background-color: #d9ead3;
+}
+
+.crop-achievement-main-menu-button {
+  position: relative;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.content-wrapper-achievement {
+  display: flex;
+  justify-content: space-between;
+}
+
+.crop-achievement-main-content img {
+  display: block;
+  margin: 0 auto;
+  max-width: 100%;
+  height: 650px;
+}
+
+.image-cell-achievement {
+  vertical-align: top; /* Align image to the top */
+}
+
+/* Custom table class */
+.custom-crop-achievement-table {
+  width: 100%; /* Control width */
+  table-layout: fixed; /* Force table to be thinner */
+  font-size: 0.58rem; /* Adjust font size to make the table thinner */
+  line-height: 0.58; /* Reduce the line-height to make the table more compact */
+}
+
+/* Define equal width for all columns */
+.custom-crop-achievement-table th:first-child,
+.custom-crop-achievement-table td:first-child {
+  width: 4%; /* Set a fixed width for the leftmost column */
+}
+
+.custom-crop-achievement-table th,
+.custom-crop-achievement-table td {
+  padding: 4px;
+  text-align: left;
+}
+
+/* Specific column widths to control the table's overall width */
+.custom-crop-achievement-table th {
+  background-color: #ffffff !important;
+  width: 10%; /* Adjust to make the columns narrower */
+  height: 2%;
+}
+
+.custom-crop-achievement-table td {
+  width: 10%; /* Match the column width */
+  line-height: 0.195;
+}
+
+#new-achievement-table {
+  border-collapse: collapse;
+}
+
+/* Styling the border */
+.custom-crop-achievement-table th, .custom-crop-achievement-table td {
+  border: 1px solid #dddddd;
+}
+
+#top-day-cell {
+  background-color: #d9ead3 !important;
+  line-height: 2.95;
+  font-size: 0.8rem;
+  text-align: center;
+}

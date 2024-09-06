@@ -160,14 +160,14 @@
     margin-right: 10px; /* Optional: Add some space from the right edge */
   }
   
-  .button-group {
+  .button-group-manager {
     display: flex;
     gap: 10px; /* Add space between the buttons */
     justify-content: flex-start; /* Align the buttons to the left */
     margin-top: 20px; /* Add some space above the buttons */
   }
   
-  .custom-button {
+  .custom-button-manager {
     background-color: #d6e3c8; /* Light green background */
     color: #333; /* Dark text color */
     padding: 10px 20px; /* Padding inside the button */
@@ -178,7 +178,7 @@
     min-width: 150px; /* Minimum button width */
   }
   
-  .custom-button:hover {
+  .custom-button-manager:hover {
     background-color: #c5d6b8; /* Slightly darker green on hover */
   }
   

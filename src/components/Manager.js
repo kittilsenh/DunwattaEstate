@@ -3,6 +3,7 @@ import { Container, Row, Col, Button } from 'react-bootstrap';
 import { Table, TableBody, TableCell, TableContainer, TableHead, TableRow, Paper } from '@mui/material';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faUser } from '@fortawesome/free-solid-svg-icons';
+import { Link } from 'react-router-dom';
 import './Manager.css'; // Import the new CSS file
 
 const borderStyle = { border: '2px solid #333' };   // Full border on all sides
@@ -219,9 +220,9 @@ const Manager = () => {
       </Table>
     </TableContainer>
 
-    <div className="button-group">
-        <div className="custom-button">Plucking Rounds</div>
-        <div className="custom-button">Tapping Rounds</div>
+    <div className="button-group-manager">
+        <div className="custom-button-manager">Plucking Rounds</div>
+        <div className="custom-button-manager">Tapping Rounds</div>
     </div>
 
 </div>
@@ -241,7 +242,9 @@ const Manager = () => {
           <Button className="right-sidebar-button">Leave Application</Button>
           <Button className="right-sidebar-button">Correspondence</Button>
         </div>
+        <Link to="/">
         <Button className="logout-button">Log Out</Button>
+        </Link>
       </div>
     </div>
   );

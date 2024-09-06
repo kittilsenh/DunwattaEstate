@@ -1,6 +1,8 @@
 import React from 'react';
 import { Container, Row, Col, Button } from 'react-bootstrap';
 import { Table, TableBody, TableCell, TableContainer, TableHead, TableRow, Paper } from '@mui/material';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faUser } from '@fortawesome/free-solid-svg-icons';
 import './Manager.css'; // Import the new CSS file
 
 const borderStyle = { border: '2px solid #333' };   // Full border on all sides
@@ -49,21 +51,27 @@ const Manager = () => {
             </Col>
           </Row>
 
-          {/* Header Section */}
-          <Row className="header-section">
-            <Col xs={6}>
-              <div className="date-picker">
-                <label>Date</label>
-                <input type="date" className="date-input" />
-              </div>
-            </Col>
-            <Col xs={6}>
-              <div className="time-picker">
-                <label>Time</label>
-                <input type="time" className="time-input" />
-              </div>
-            </Col>
-          </Row>
+            {/* Header Section */}
+            <Row className="header-section-unique">
+              <Col xs={6}>
+                <div className="date-time-container">
+                  <div className="date-picker-unique">
+                    <label className="label-unique">Date</label>
+                    <input type="date" className="input-unique" />
+                  </div>
+                  <div className="time-picker-unique">
+                    <label className="label-unique">Time</label>
+                    <input type="time" className="input-unique" />
+                  </div>
+                </div>
+              </Col>
+            </Row>
+
+            {/* Crop Performance Text Section */}
+            <div className="crop-performance-header">
+              <p>Crop Performance - Estate July 2024</p>
+            </div>
+
 
           {/* Table or Other Content */}
           <TableContainer component={Paper}>
@@ -146,7 +154,7 @@ const Manager = () => {
             <TableCell style={borderLeftRightStyle} align="center"></TableCell>
             <TableCell style={borderLeftRightStyle} align="center"></TableCell>
           </TableRow>
-                      {/* Row 7 */}
+            {/* Row 7 */}
             <TableRow>
             <TableCell style={borderLeftRightStyle}>Plucking Average</TableCell>
             <TableCell style={borderLeftRightStyle} align="center"></TableCell>
@@ -156,7 +164,7 @@ const Manager = () => {
             <TableCell style={borderLeftRightStyle} align="center"></TableCell>
             <TableCell style={borderLeftRightStyle} align="center"></TableCell>
           </TableRow>
-                      {/* Row 8 */}
+            {/* Row 8 */}
             <TableRow>
             <TableCell style={borderLeftRightStyle}>Plucking Cost</TableCell>
             <TableCell style={borderLeftRightStyle} align="center"></TableCell>
@@ -166,7 +174,7 @@ const Manager = () => {
             <TableCell style={borderLeftRightStyle} align="center"></TableCell>
             <TableCell style={borderLeftRightStyle} align="center"></TableCell>
           </TableRow>
-                    {/* Row 9 */}
+            {/* Row 9 */}
             <TableRow>
             <TableCell style={borderLeftRightStyle}>Weeding Cost</TableCell>
             <TableCell style={borderLeftRightStyle} align="center"></TableCell>
@@ -176,7 +184,7 @@ const Manager = () => {
             <TableCell style={borderLeftRightStyle} align="center"></TableCell>
             <TableCell style={borderLeftRightStyle} align="center"></TableCell>
           </TableRow>
-                    {/* Row 10 */}
+            {/* Row 10 */}
             <TableRow>
             <TableCell style={borderLeftRightStyle}>RLO</TableCell>
             <TableCell style={borderLeftRightStyle} align="center"></TableCell>
@@ -186,7 +194,7 @@ const Manager = () => {
             <TableCell style={borderLeftRightStyle} align="center"></TableCell>
             <TableCell style={borderLeftRightStyle} align="center"></TableCell>
           </TableRow>
-                    {/* Row 11 */}
+            {/* Row 11 */}
             <TableRow>
             <TableCell style={borderLeftRightStyle}>Crop/Acre</TableCell>
             <TableCell style={borderLeftRightStyle} align="center"></TableCell>
@@ -210,14 +218,20 @@ const Manager = () => {
         </TableBody>
       </Table>
     </TableContainer>
-        </div>
+
+    <div className="button-group">
+        <div className="custom-button">Plucking Rounds</div>
+        <div className="custom-button">Tapping Rounds</div>
+    </div>
+
+</div>
 
       {/* Right Sidebar */}
       <div className="manager-right-sidebar">
         <div className="profile-section">
-          <div className="profile-image-right"></div>
-          <h4 className="manager-name-right">Mr. Nanayakkara</h4>
-          <p className="manager-title-right">Manager</p>
+            <FontAwesomeIcon icon={faUser} className="profile-icon" />
+            <h4 className="manager-name-right">Mr. Nanayakkara</h4>
+            <p className="manager-title-right">Manager</p>
         </div>
         <div className="menu-items-right">
           <Button className="right-sidebar-button">Messages</Button>

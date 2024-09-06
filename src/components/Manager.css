@@ -114,4 +114,79 @@
     border: 1px solid #2e6633;
     padding: 10px;
   }
+ 
+  .header-section-unique {
+    background-color: #d6e3c8; /* Light green background */
+    padding: 10px;
+    border-radius: 12px; /* Rounded corners */
+    margin-top: 10px;
+    display: flex;
+    justify-content: flex-start; /* Lean everything slightly left */
+    align-items: center; /* Align items vertically centered */
+    width: 115%; /* Full width */
+  }
+  
+  .date-time-container {
+    display: flex;
+    gap: 20px; /* Space between date and time sections */
+    align-items: center; /* Align date and time inputs on the same line */
+  }
+  
+  .date-picker-unique, .time-picker-unique {
+    display: flex;
+    align-items: center;
+  }
+  
+  .label-unique {
+    font-size: 1rem;
+    font-weight: bold;
+    color: #333;
+    margin-right: 10px; /* Space between label and input */
+  }
+  
+  .input-unique {
+    padding: 5px 10px;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1);
+    background-color: white;
+    width: 150px;
+  }
+  
+  .crop-performance-header {
+    text-align: right; /* Aligns the text to the right */
+    margin-top: 10px; /* Optional: Adjust the margin if needed */
+    margin-right: 10px; /* Optional: Add some space from the right edge */
+  }
+  
+  .button-group {
+    display: flex;
+    gap: 10px; /* Add space between the buttons */
+    justify-content: flex-start; /* Align the buttons to the left */
+    margin-top: 20px; /* Add some space above the buttons */
+  }
+  
+  .custom-button {
+    background-color: #d6e3c8; /* Light green background */
+    color: #333; /* Dark text color */
+    padding: 10px 20px; /* Padding inside the button */
+    border-radius: 20px; /* Rounded corners */
+    font-weight: bold;
+    text-align: center;
+    cursor: pointer;
+    min-width: 150px; /* Minimum button width */
+  }
+  
+  .custom-button:hover {
+    background-color: #c5d6b8; /* Slightly darker green on hover */
+  }
+  
+  .profile-icon {
+    font-size: 100px;
+    color: grey;
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 10px;
+  }
   

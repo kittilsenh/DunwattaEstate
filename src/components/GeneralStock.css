@@ -411,9 +411,6 @@ input[type="text"].responsive-input {
 .profile-stock-unique {
     text-align: center;
     margin-bottom: 20px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;  /* Ensures horizontal centering of children */
 }
 
 .profile-image-stock-unique {
@@ -423,8 +420,8 @@ input[type="text"].responsive-input {
     height: 150px;
     border-radius: 50%;
     margin-bottom: 10px;
+    justify-content: center;
 }
-
 
 .name-background-stock-unique {
     background-color: darkgreen;
@@ -461,3 +458,33 @@ input[type="text"].responsive-input {
     font-size: 0.9em;
     color: #777;
 }
+
+/* Message button container to position relative to hold the red dot */
+/* Sidebar Buttons */
+.menu-item-stock-unique {
+    position: relative; /* Reference point for absolute positioning of the red dot */
+    font-weight: bold;
+    padding: 10px 20px; /* Same padding as other buttons */
+    width: 100%; /* Ensure full width */
+    border-radius: 8px; /* Match the other buttons */
+    margin-bottom: 10px;
+    display: inline-block;
+    text-align: center;
+  }
+  
+  /* Notification Badge */
+  .crop-achievement-notification-badge {
+    background-color: red;
+    color: white;
+    font-size: 12px;
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    display: inline-block;
+    text-align: center;
+    line-height: 18px;
+    position: absolute;
+    top: -10px; /* Position the red dot above the button */
+    right: -10px; /* Position the red dot to the right of the button */
+  }
+  

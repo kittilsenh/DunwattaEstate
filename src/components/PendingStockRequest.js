@@ -146,13 +146,17 @@ const PendingStockRequest = () => {
               <p className="text-white">Manager</p>
             </div>
           </div>
-          <div className="menu-items-stock">
-            <Button variant="outline-success" className="menu-item-stock">Messages</Button>
-            <Button variant="outline-success" className="menu-item-stock">Order Request / Return</Button>
-            <Button variant="outline-success" className="menu-item-stock">Item Rounds</Button>
-            <Button variant="outline-success" className="menu-item-stock">Work Program</Button>
-            <Button variant="outline-success" className="menu-item-stock">Tool Rounds</Button>
-          </div>
+          <div className="menu-items-stock-unique d-flex flex-column">
+  <Button variant="outline-success" className="menu-item-stock-unique mb-2">
+    Messages
+    <span className="crop-achievement-notification-badge">2</span>
+  </Button>
+  <Button variant="outline-success" className="menu-item-stock-unique mb-2">Order Request / Return</Button>
+  <Button variant="outline-success" className="menu-item-stock-unique mb-2">Plucking Rounds</Button>
+  <Button variant="outline-success" className="menu-item-stock-unique mb-2">Work Program</Button>
+  <Button variant="outline-success" className="menu-item-stock-unique mb-2">Tool Rounds</Button>
+</div>
+
           <div className="action-buttons-stock">
             <Button variant="success" className="submit-button-stock">Submit</Button>
             <Button variant="warning" className="return-button-stock">Return</Button>

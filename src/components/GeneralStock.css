@@ -276,3 +276,188 @@ input[type="text"].responsive-input {
 #light-green-stock-general {
     background-color: rgb(138, 197, 138);
 }
+
+/* GeneralStock page */
+
+/* Container for the entire table */
+
+
+/* Container for the entire table */
+
+
+
+
+/* Container for the entire table */
+.inventoryTable-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+  }
+  
+  /* General table styles */
+  .inventoryTable-table {
+    border-collapse: collapse;
+    width: 90%;
+    margin: 0 auto;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+  }
+  
+  /* ---------- HEADER BORDERS ---------- */
+  
+  /* Top header "Item Category" and "Availability" */
+  .inventoryTable-categoryHeader {
+    background-color: #d0e5d3;
+    font-weight: bold;
+    text-align: center;
+    border: 3px solid #333; /* Top border for the whole table */
+  }
+  
+  .inventoryTable-availabilityHeader {
+    background-color: #d0e5d3;
+    font-weight: bold;
+    text-align: center;
+    border: 3px solid #333; /* Top border for the whole table */
+  }
+  
+  /* Inner header cells for column titles */
+  .inventoryTable-table th {
+    background-color: #d0e5d3;
+    text-align: center;
+    padding: 12px;
+    border: 2px solid #333; /* Border for inner header cells */
+  }
+  
+  /* ---------- MAIN CELL BORDERS ---------- */
+  
+  /* All table cells have a 2px solid border */
+  .inventoryTable-table td {
+    border: 2px solid #333; /* General cell border */
+    padding: 8px;
+    background-color: #fff;
+  }
+  
+  /* Alternating row colors */
+  .inventoryTable-table tbody tr:nth-child(odd) td {
+    background-color: #f1f1f1; /* Light grey background for odd rows */
+  }
+  
+  .inventoryTable-table tbody tr:nth-child(even) td {
+    background-color: #fff; /* White background for even rows */
+  }
+  
+  /* ---------- SPECIAL ROW STYLES ---------- */
+  
+  /* Row for "Fuel" with a green background */
+  .inventoryTable-table tbody tr:nth-child(5) td {
+    background-color: #d6e3c8;  /* Green for "Fuel" */
+    border: 2px solid #333; /* Green row with regular borders */
+  }
+  
+  /* ---------- TOTAL VALUE ROW ---------- */
+  
+  /* Total Value row at the bottom */
+  .inventoryTable-totalValueRow {
+    background-color: #f0f5f0;  /* Light grey background for Total Value */
+    font-weight: bold;
+  }
+  
+  .inventoryTable-totalValue {
+    text-align: right;
+    padding: 12px;
+    border: 3px solid #333; /* Thicker border for Total Value row */
+  }
+  
+  /* ---------- PENDING ORDER STYLES ---------- */
+  
+  /* Pending Order "By" and "Qty" columns */
+  .pending-order-header {
+    background-color: #d0e5d3;
+    text-align: center;
+    font-weight: bold;
+    border: 3px solid #333; /* Thick border for Pending Order section */
+    vertical-align: middle;
+  }
+  
+  /* ---------- COLUMN ALIGNMENT ---------- */
+  
+  /* Center-align the column headers and their content */
+  .inventoryTable-table thead th,
+  .inventoryTable-table td {
+    vertical-align: middle;
+    text-align: left;
+  }
+  
+  /* ---------- EMPTY CELL STYLES ---------- */
+  
+  /* Ensure all empty cells are easily identifiable */
+  .inventoryTable-table td:empty {
+    background-color: #f9f9f9; /* Light grey for empty cells */
+    border: 2px solid #333; /* Keep borders on empty cells */
+  }
+  
+/* Sidebar */
+.profile-sidebar-stock-unique {
+    background-color: white;
+    padding: 20px;
+    color: black;
+    border-radius: 8px;
+    position: sticky;
+    top: 20px;
+    height: auto;
+}
+
+.profile-stock-unique {
+    text-align: center;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;  /* Ensures horizontal centering of children */
+}
+
+.profile-image-stock-unique {
+    background: url('../assets/profile.png') no-repeat center center;
+    background-size: cover;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+
+.name-background-stock-unique {
+    background-color: darkgreen;
+    padding: 10px;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    color: white;
+}
+
+.menu-item-stock-unique {
+    width: 100%;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.action-buttons-stock-unique {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.submit-button-stock-unique, .return-button-stock-unique, .main-menu-button-stock-unique {
+    padding: 10px 20px;
+    font-weight: bold;
+    color: white;
+    width: 150px;
+}
+
+.footer-stock-unique {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 0.9em;
+    color: #777;
+}

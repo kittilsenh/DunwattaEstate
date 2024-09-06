@@ -94,30 +94,26 @@ const KeyPerformanceIndicators = () => {
             <p className="text-white">Manager</p>
           </div>
         </div>
-        <div className="menu-items d-flex flex-column">
-          <Button variant="outline-success" className="kpi-menu-item mb-2">
-            Messages
-            <span className="kpi-notification-badge">2</span>
-          </Button>
-          
-          <Button variant="outline-success" className="kpi-menu-item mb-2">Order Request / Return</Button>
-          
-          <Button variant="outline-success" className="kpi-menu-item mb-2">Plucking Rounds</Button>
-          
-          <Button variant="outline-success" className="kpi-menu-item mb-2">Work Program</Button>
-          
-          <Button variant="outline-success" className="kpi-menu-item mb-2">Tapping Rounds</Button>
+        <div className="kpi-menu-items d-flex flex-column">
+  <Button variant="outline-success" className="kpi-menu-item-unique mb-2">
+    Messages
+    <span className="kpi-notification-badge-unique">2</span>
+  </Button>
+  <Button variant="outline-success" className="kpi-menu-item-unique mb-2">Order Request / Return</Button>
+  <Button variant="outline-success" className="kpi-menu-item-unique mb-2">Plucking Rounds</Button>
+  <Button variant="outline-success" className="kpi-menu-item-unique mb-2">Work Program</Button>
+  <Button variant="outline-success" className="kpi-menu-item-unique mb-2">Tapping Rounds</Button>
+</div>
 
-        </div>
-        <div className="action-buttons">
-          <Button variant="success" className="submit-button">Approved</Button>
-          <Button variant="warning" className="edit-button">Return</Button>
-          <Link to="/">
-            <Button variant="danger" className="main-menu-button">Main Menu</Button>
-          </Link>
-        </div>
+<div className="kpi-action-buttons-unique">
+  <Button variant="success" className="kpi-submit-button-unique">Approved</Button>
+  <Button variant="warning" className="kpi-edit-button-unique">Return</Button>
+  <Link to="/">
+    <Button variant="danger" className="kpi-main-menu-button-unique">Main Menu</Button>
+  </Link>
+</div>
+
       </div>
-
 
       {/* Footer inside main layout */}
       <div className="footer-container">

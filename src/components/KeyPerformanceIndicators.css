@@ -59,9 +59,13 @@
   }
 
   .kpi-menu-item {
-    position: relative; /* Make the button the reference point for the absolute positioning */
-    padding: 10px 20px;
-    border-radius: 5px;
+    position: relative; /* Ensure button serves as reference point for the notification badge */
+    font-weight: bold;
+    padding: 10px 20px; /* Adjust padding for consistent button size */
+    width: 100%; /* Ensure the buttons are full-width */
+    border-radius: 5px; /* Consistent border-radius */
+    text-align: center; /* Center-align text */
+    margin-bottom: 10px; /* Add spacing between buttons */
   }
   
   .kpi-notification-badge {
@@ -98,3 +102,119 @@
     font-size: 0.9em;
     color: #777;
   }
+  .submit-button, .edit-button, .main-menu-button {
+    padding: 10px 20px; /* Ensure consistent padding for the action buttons */
+    font-weight: bold;
+    width: 100%; /* Full-width for these buttons as well */
+    border-radius: 8px; /* Adjust border-radius */
+  }
+  
+  .submit-button {
+    background-color: #28a745; /* Green background for "Submit" */
+    color: white;
+  }
+  
+  .edit-button {
+    background-color: #ffc107; /* Yellow background for "Edit" */
+    color: white;
+  }
+  
+  .main-menu-button {
+    background-color: #dc3545; /* Red background for "Main Menu" */
+    color: white;
+  }
+
+  /* Unique layout for the KPI page */
+.kpi-layout-unique {
+  display: grid;
+  grid-template-columns: 10fr 2fr;
+  gap: 20px;
+  min-height: 100vh;
+  position: relative;
+}
+
+/* Main content styling */
+.kpi-main-content-unique {
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  padding: 20px;
+  margin-right: 20px;
+}
+
+/* Sidebar styling */
+.kpi-profile-sidebar-unique {
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  height: 110vh;
+  position: sticky;
+  top: 0;
+  overflow-y: auto;
+}
+
+/* Unique button styling for the KPI menu items */
+.kpi-menu-item-unique {
+  position: relative;
+  font-weight: bold;
+  padding: 10px 20px;
+  width: 100%;
+  border-radius: 5px;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+/* Notification badge styling */
+.kpi-notification-badge-unique {
+  background-color: red;
+  color: white;
+  font-size: 12px;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  display: inline-block;
+  text-align: center;
+  line-height: 18px;
+  position: absolute;
+  top: -5px;
+  right: -10px;
+}
+
+/* Unique styling for action buttons */
+.kpi-submit-button-unique, .kpi-edit-button-unique, .kpi-main-menu-button-unique {
+  padding: 10px 20px;
+  font-weight: bold;
+  width: 100%;
+  border-radius: 8px;
+  margin-top: 7px;
+}
+
+/* Button background colors */
+.kpi-submit-button-unique {
+  background-color: #28a745;
+  color: white;
+}
+
+.kpi-edit-button-unique {
+  background-color: #ffc107;
+  color: white;
+}
+
+.kpi-main-menu-button-unique {
+  background-color: #dc3545;
+  color: white;
+}
+
+/* Footer styling */
+.footer-key-performance-unique {
+  text-align: center;
+  color: #555;
+  font-size: 1.0em;
+  width: 100%;
+}
+
+.footer-container-unique {
+  grid-column: 1 / -1;
+  padding: 10px;
+  background-color: #f1f1f1;
+  text-align: center;
+}

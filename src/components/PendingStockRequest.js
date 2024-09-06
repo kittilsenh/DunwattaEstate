@@ -151,10 +151,10 @@ const PendingStockRequest = () => {
     Messages
     <span className="crop-achievement-notification-badge">2</span>
   </Button>
-  <Button variant="outline-success" className="menu-item-stock-unique mb-2">Order Request / Return</Button>
+  <Button variant="outline-success" className="menu-item-stock-unique mb-2">Crop Achievement</Button>
   <Button variant="outline-success" className="menu-item-stock-unique mb-2">Plucking Rounds</Button>
   <Button variant="outline-success" className="menu-item-stock-unique mb-2">Work Program</Button>
-  <Button variant="outline-success" className="menu-item-stock-unique mb-2">Tool Rounds</Button>
+  <Button variant="outline-success" className="menu-item-stock-unique mb-2">Tapping Rounds</Button>
 </div>
 
           <div className="action-buttons-stock">

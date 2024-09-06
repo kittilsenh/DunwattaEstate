@@ -1,0 +1,117 @@
+.manager-layout {
+    display: grid;
+    grid-template-columns: 3fr 8fr 2fr;
+    gap: 20px;
+    min-height: 100vh;
+  }
+  
+  .manager-sidebar {
+    background-color: #2e6633;
+    padding: 20px;
+    color: white;
+  }
+  
+  .manager-right-sidebar {
+    background-color: #fff;
+    padding: 20px;
+    color: black;
+  }
+  
+  .profile-section {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .profile-image, .profile-image-right {
+    background-color: grey;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin: 0 auto;
+  }
+  
+  .manager-name, .manager-name-right {
+    font-weight: bold;
+    margin-top: 10px;
+  }
+  
+  .manager-title, .manager-title-right {
+    font-size: 0.9rem;
+  }
+  
+  .menu-items, .menu-items-right {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .manager-sidebar-button, .right-sidebar-button {
+    background-color: #419c68 !important;
+    color: white !important;
+    margin-bottom: 10px;
+    border: none !important;  /* Ensure no border is applied */
+    padding: 10px;
+    text-align: center;
+    outline: none !important;  /* Remove default blue outline on focus */
+    box-shadow: none !important;  /* Remove any focus shadow */
+    width: 250px;
+  }
+
+  .manager-sidebar-button:focus, .right-sidebar-button:focus {
+    outline: none !important;  /* Ensure no outline on focus */
+    box-shadow: none !important;  /* Remove focus shadow */
+  }
+  
+  .logout-button {
+    background-color: red !important;
+    color: white !important;
+    width: 100%;
+    margin-top: 20px;
+    border: none !important;
+    outline: none !important;
+    box-shadow: none !important;
+  }
+  
+  .manager-main-content {
+    padding: 20px;
+    
+  }
+  
+  .estate-title {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #2e6633;
+  }
+  
+  .division-title {
+    font-size: 1.5rem;
+    color: #2e6633;
+  }
+  
+  .header-section {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+  }
+  
+  .date-picker, .time-picker {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .date-input, .time-input {
+    padding: 5px;
+    border: 1px solid #2e6633;
+    border-radius: 5px;
+  }
+  
+  .manager-table {
+    width: 100%;
+    margin-top: 20px;
+    text-align: center;
+  }
+  
+  .manager-table th, .manager-table td {
+    border: 1px solid #2e6633;
+    padding: 10px;
+  }
+  

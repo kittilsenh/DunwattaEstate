@@ -59,6 +59,9 @@ function Sidebar() {
         <li>
           <Link to="/pending-stock-request">Pending Stock Request</Link>
         </li>
+        <li>
+          <Link to="/manager">Manager</Link> {/* Link to Manager */}
+        </li>
       </ul>
     </aside>
   );

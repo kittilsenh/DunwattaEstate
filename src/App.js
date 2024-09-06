@@ -13,6 +13,7 @@ import CropAchievement from './components/CropAchievement';
 import CropBook from './components/CropBook'; // Import the new component
 import GeneralStock from './components/GeneralStock';
 import PendingStockRequest from './components/PendingStockRequest';
+import Manager from './components/Manager'; // Import the new component
 
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
@@ -29,7 +30,10 @@ function AppContent() {
   const location = useLocation();
 
   // List of routes that should not display the sidebar and header
-  const separatePages = ["/login", "/morning-muster", "/morning-muster-revive", "/evening-muster", "/key-performance-indicators", "/crop-achievement","/crop-book", "/evening-muster-approval", "/general-stock", "/pending-stock-request"];
+  const separatePages = ["/login", "/morning-muster", "/morning-muster-revive", 
+  "/evening-muster", "/key-performance-indicators", "/crop-achievement",
+  "/crop-book", "/evening-muster-approval", "/general-stock", 
+  "/pending-stock-request", "/manager"];
 
   // Determine if the current route is a separate page
   const isSeparatePage = separatePages.includes(location.pathname);
@@ -51,6 +55,7 @@ function AppContent() {
           <Route path="/crop-book" element={<CropBook />} />
           <Route path="/general-stock" element={<GeneralStock />} />
           <Route path="/pending-stock-request" element={<PendingStockRequest />} />
+          <Route path="/manager" element={<Manager />} /> {/* Add the new route */}
         </Routes>
       </div>
     </div>
